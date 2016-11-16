@@ -23,7 +23,7 @@ public class frmKalkulator extends javax.swing.JDialog {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jTextField1 = new javax.swing.JTextField();
+        txtTampil = new javax.swing.JTextField();
         btnSatu = new javax.swing.JButton();
         btnDua = new javax.swing.JButton();
         btnTiga = new javax.swing.JButton();
@@ -60,6 +60,11 @@ public class frmKalkulator extends javax.swing.JDialog {
         });
 
         btnTiga.setText("3");
+        btnTiga.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnTigaActionPerformed(evt);
+            }
+        });
 
         btnTambah.setText("+");
         btnTambah.addActionListener(new java.awt.event.ActionListener() {
@@ -71,6 +76,11 @@ public class frmKalkulator extends javax.swing.JDialog {
         btnLima.setText("5");
 
         btnEmpat.setText("4");
+        btnEmpat.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnEmpatActionPerformed(evt);
+            }
+        });
 
         btnEnam.setText("6");
 
@@ -144,14 +154,14 @@ public class frmKalkulator extends javax.swing.JDialog {
                             .addComponent(btnTambah)
                             .addComponent(btnBagi, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(btnKali, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                    .addComponent(jTextField1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 177, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtTampil, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 177, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(txtTampil, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnSatu)
@@ -199,6 +209,16 @@ public class frmKalkulator extends javax.swing.JDialog {
         tmp += "2";
         txtTampil.setText(tmp);
     }//GEN-LAST:event_btnDuaActionPerformed
+
+    private void btnTigaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTigaActionPerformed
+        tmp += "3";
+        txtTampil.setText(tmp);
+    }//GEN-LAST:event_btnTigaActionPerformed
+
+    private void btnEmpatActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEmpatActionPerformed
+        tmp += "4";
+        txtTampil.setText(tmp);
+    }//GEN-LAST:event_btnEmpatActionPerformed
 
     /**
      * @param args the command line arguments
@@ -261,6 +281,6 @@ public class frmKalkulator extends javax.swing.JDialog {
     private javax.swing.JButton btnTambah;
     private javax.swing.JButton btnTiga;
     private javax.swing.JButton btnTujuh;
-    private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField txtTampil;
     // End of variables declaration//GEN-END:variables
 }
