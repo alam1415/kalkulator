@@ -151,6 +151,11 @@ public class frmKalkulator extends javax.swing.JDialog {
         });
 
         btnPlusMinus.setText("+/-");
+        btnPlusMinus.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnPlusMinusActionPerformed(evt);
+            }
+        });
 
         btnSamaDengan.setText("=");
 
@@ -341,6 +346,15 @@ public class frmKalkulator extends javax.swing.JDialog {
         hasil=0;
         txtTampil.setText("");
     }//GEN-LAST:event_btnBersihActionPerformed
+
+    private void btnPlusMinusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPlusMinusActionPerformed
+        if (hasil == 0) {
+            JOptionPane.showMessageDialog(this, "Maaf hasil belum ada oprasi aritmatik yang terjadi");
+        } else {
+            hasil *= -1;
+            txtTampil.setText(String.valueOf(hasil));
+        }
+    }//GEN-LAST:event_btnPlusMinusActionPerformed
 
     /**
      * @param args the command line arguments
