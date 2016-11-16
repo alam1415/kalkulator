@@ -74,6 +74,11 @@ public class frmKalkulator extends javax.swing.JDialog {
         });
 
         btnLima.setText("5");
+        btnLima.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnLimaActionPerformed(evt);
+            }
+        });
 
         btnEmpat.setText("4");
         btnEmpat.addActionListener(new java.awt.event.ActionListener() {
@@ -83,6 +88,11 @@ public class frmKalkulator extends javax.swing.JDialog {
         });
 
         btnEnam.setText("6");
+        btnEnam.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnEnamActionPerformed(evt);
+            }
+        });
 
         btnKurang.setText("-");
 
@@ -219,6 +229,16 @@ public class frmKalkulator extends javax.swing.JDialog {
         tmp += "4";
         txtTampil.setText(tmp);
     }//GEN-LAST:event_btnEmpatActionPerformed
+
+    private void btnLimaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLimaActionPerformed
+        tmp += "5";
+        txtTampil.setText(tmp);
+    }//GEN-LAST:event_btnLimaActionPerformed
+
+    private void btnEnamActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEnamActionPerformed
+        tmp += "6";
+        txtTampil.setText(tmp);
+    }//GEN-LAST:event_btnEnamActionPerformed
 
     /**
      * @param args the command line arguments
