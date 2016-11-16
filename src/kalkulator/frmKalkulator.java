@@ -95,6 +95,11 @@ public class frmKalkulator extends javax.swing.JDialog {
         });
 
         btnKurang.setText("-");
+        btnKurang.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnKurangActionPerformed(evt);
+            }
+        });
 
         btnTujuh.setText("7");
         btnTujuh.addActionListener(new java.awt.event.ActionListener() {
@@ -227,7 +232,10 @@ public class frmKalkulator extends javax.swing.JDialog {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnTambahActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTambahActionPerformed
-        // TODO add your handling code here:
+        a1 = Float.valueOf(tmp);
+        pilih = 1;
+        tmp = "";
+        txtTampil.setText("+");
     }//GEN-LAST:event_btnTambahActionPerformed
 
     private void btnSatuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSatuActionPerformed
@@ -279,6 +287,13 @@ public class frmKalkulator extends javax.swing.JDialog {
         tmp += "0";
         txtTampil.setText(tmp);
     }//GEN-LAST:event_btnNolActionPerformed
+
+    private void btnKurangActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnKurangActionPerformed
+        a1 = Float.valueOf(tmp);
+        pilih = 2;
+        tmp = "";
+        txtTampil.setText("-");
+    }//GEN-LAST:event_btnKurangActionPerformed
 
     /**
      * @param args the command line arguments
