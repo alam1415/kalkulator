@@ -158,6 +158,11 @@ public class frmKalkulator extends javax.swing.JDialog {
         });
 
         btnSamaDengan.setText("=");
+        btnSamaDengan.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSamaDenganActionPerformed(evt);
+            }
+        });
 
         btnKali.setText("X");
         btnKali.addActionListener(new java.awt.event.ActionListener() {
@@ -355,6 +360,16 @@ public class frmKalkulator extends javax.swing.JDialog {
             txtTampil.setText(String.valueOf(hasil));
         }
     }//GEN-LAST:event_btnPlusMinusActionPerformed
+
+    private void btnSamaDenganActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSamaDenganActionPerformed
+        switch(pilih){
+            case 1:
+                a2 = Float.valueOf(tmp);
+                hasil = (float) a1 + a2;
+                tmp = String.valueOf(hasil);
+                txtTampil.setText(tmp);
+                break;
+    }//GEN-LAST:event_btnSamaDenganActionPerformed
 
     /**
      * @param args the command line arguments
