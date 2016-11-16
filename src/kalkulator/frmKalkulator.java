@@ -130,8 +130,18 @@ public class frmKalkulator extends javax.swing.JDialog {
         });
 
         btnKoma.setText(",");
+        btnKoma.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnKomaActionPerformed(evt);
+            }
+        });
 
         btnBersih.setText("c");
+        btnBersih.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnBersihActionPerformed(evt);
+            }
+        });
 
         btnBagi.setText(":");
         btnBagi.addActionListener(new java.awt.event.ActionListener() {
@@ -318,6 +328,19 @@ public class frmKalkulator extends javax.swing.JDialog {
         tmp = "";
         txtTampil.setText(":");
     }//GEN-LAST:event_btnBagiActionPerformed
+
+    private void btnKomaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnKomaActionPerformed
+        tmp += ".";
+        txtTampil.setText(tmp);
+    }//GEN-LAST:event_btnKomaActionPerformed
+
+    private void btnBersihActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBersihActionPerformed
+        tmp = "";
+        a1=0;
+        a2=0;
+        hasil=0;
+        txtTampil.setText("");
+    }//GEN-LAST:event_btnBersihActionPerformed
 
     /**
      * @param args the command line arguments

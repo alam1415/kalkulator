@@ -233,11 +233,17 @@
       <Properties>
         <Property name="text" type="java.lang.String" value=","/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnKomaActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btnBersih">
       <Properties>
         <Property name="text" type="java.lang.String" value="c"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnBersihActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btnBagi">
       <Properties>
