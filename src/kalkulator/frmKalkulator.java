@@ -111,8 +111,18 @@ public class frmKalkulator extends javax.swing.JDialog {
         });
 
         btnSembilan.setText("9");
+        btnSembilan.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSembilanActionPerformed(evt);
+            }
+        });
 
         btnNol.setText("0");
+        btnNol.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnNolActionPerformed(evt);
+            }
+        });
 
         btnKoma.setText(",");
 
@@ -259,6 +269,16 @@ public class frmKalkulator extends javax.swing.JDialog {
         tmp += "8";
         txtTampil.setText(tmp);
     }//GEN-LAST:event_btnDelapanActionPerformed
+
+    private void btnSembilanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSembilanActionPerformed
+       tmp += "9";
+        txtTampil.setText(tmp);
+    }//GEN-LAST:event_btnSembilanActionPerformed
+
+    private void btnNolActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNolActionPerformed
+        tmp += "0";
+        txtTampil.setText(tmp);
+    }//GEN-LAST:event_btnNolActionPerformed
 
     /**
      * @param args the command line arguments
