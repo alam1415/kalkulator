@@ -97,8 +97,18 @@ public class frmKalkulator extends javax.swing.JDialog {
         btnKurang.setText("-");
 
         btnTujuh.setText("7");
+        btnTujuh.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnTujuhActionPerformed(evt);
+            }
+        });
 
         btnDelapan.setText("8");
+        btnDelapan.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnDelapanActionPerformed(evt);
+            }
+        });
 
         btnSembilan.setText("9");
 
@@ -239,6 +249,16 @@ public class frmKalkulator extends javax.swing.JDialog {
         tmp += "6";
         txtTampil.setText(tmp);
     }//GEN-LAST:event_btnEnamActionPerformed
+
+    private void btnTujuhActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTujuhActionPerformed
+        tmp += "7";
+        txtTampil.setText(tmp);
+    }//GEN-LAST:event_btnTujuhActionPerformed
+
+    private void btnDelapanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDelapanActionPerformed
+        tmp += "8";
+        txtTampil.setText(tmp);
+    }//GEN-LAST:event_btnDelapanActionPerformed
 
     /**
      * @param args the command line arguments
